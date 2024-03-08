@@ -6,13 +6,14 @@
 /*   By: ndavenne <ndavenne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/07 15:48:40 by ndavenne          #+#    #+#             */
-/*   Updated: 2024/03/08 14:06:53 by ndavenne         ###   ########.fr       */
+/*   Updated: 2024/03/08 16:54:45 by ndavenne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
+# include "libft/libft.h"
 # include <stdlib.h>
 # include <unistd.h>
 # include <stdarg.h>
