@@ -6,7 +6,7 @@
 /*   By: ndavenne <ndavenne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/08 17:00:55 by ndavenne          #+#    #+#             */
-/*   Updated: 2024/03/08 17:01:40 by ndavenne         ###   ########.fr       */
+/*   Updated: 2024/03/11 09:13:52 by ndavenne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,6 @@ int	main(void)
 	assert(printf("%x\n", 4354538) == ft_printf("%x\n", 4354538));
 	assert(printf("%X\n", 4354538) == ft_printf("%X\n", 4354538));
 	assert(printf("%%%%%%%%\n") == ft_printf("%%%%%%%%\n"));
-
+	assert(printf(" NULL %s NULL ", (char *) NULL) == ft_printf(" NULL %s NULL ", (char *) NULL));
 	return (0);
 }

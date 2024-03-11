@@ -6,11 +6,21 @@
 /*   By: ndavenne <ndavenne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/08 11:44:00 by ndavenne          #+#    #+#             */
-/*   Updated: 2024/03/08 16:50:32 by ndavenne         ###   ########.fr       */
+/*   Updated: 2024/03/11 08:35:30 by ndavenne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+int	ft_strlen(const char *s)
+{
+	int	i;
+
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
+}
 
 int	ft_putchar(char c)
 {

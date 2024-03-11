@@ -1,11 +1,9 @@
 SRC = ft_printf.c\
 ft_put.c
-
 OBJ = $(SRC:.c=.o)
-
 CC = cc
-CFLAGS = -Wall -Werror -Wextra -I libft
-
+CFLAGS = -Wall -Werror -Wextra
+#-I libft
 NAME = libftprintf.a
 
 #MAKEFLAGS += -silent
@@ -13,19 +11,19 @@ NAME = libftprintf.a
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	make -C libft
-	cp libft/libft.a $(NAME)
+#	$(MAKE) -C libft
+#	cp libft/libft.a $(NAME)
 	ar -rcs $(NAME) $(OBJ)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c -o $@ $<
 
 clean:
-	make -C libft clean
+#	$(MAKE) -C libft clean
 	rm -f $(OBJ)
 
 fclean: clean
-	make -C libft fclean
+#	$(MAKE) -C libft fclean
 	rm -f $(NAME)
 
 re: fclean
