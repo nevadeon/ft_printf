@@ -6,7 +6,7 @@ SRC = ft_printf.c \
 OBJ = $(SRC:.c=.o)
 CC = cc
 CFLAGS = -Wall -Werror -Wextra
-#-I libft
+CPPFLAGS = -I libft
 
 #MAKEFLAGS += -silent
 
@@ -31,4 +31,7 @@ fclean: clean
 re: fclean
 	make all
 
-.PHONY: all clean fclean re
+main:
+	$(CC) main/main.c $(NAME)
+
+.PHONY: all clean fclean re main
