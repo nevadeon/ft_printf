@@ -6,7 +6,7 @@
 /*   By: ndavenne <ndavenne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/07 15:48:40 by ndavenne          #+#    #+#             */
-/*   Updated: 2024/03/11 08:37:29 by ndavenne         ###   ########.fr       */
+/*   Updated: 2024/03/11 11:47:17 by ndavenne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,6 @@ int	ft_putchar(char c);
 int	ft_putstr(char *s);
 int	ft_putptr(void *ptr);
 int	ft_putnbr_base(long n, char *base);
+int	ft_putul_base(size_t n, char *base);
 
 #endif

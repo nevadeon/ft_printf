@@ -6,7 +6,7 @@
 /*   By: ndavenne <ndavenne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/07 15:43:10 by ndavenne          #+#    #+#             */
-/*   Updated: 2024/03/11 08:53:37 by ndavenne         ###   ########.fr       */
+/*   Updated: 2024/03/11 11:42:08 by ndavenne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ static int	_printarg(char c, va_list args)
 		return (ft_putchar('%'));
 	ft_putchar('%');
 	ft_putchar(c);
-	return(2);
+	return (2);
 }
 
 int	ft_printf(const char *format, ...)

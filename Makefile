@@ -1,10 +1,12 @@
-SRC = ft_printf.c\
-ft_put.c
+NAME = libftprintf.a
+SRC = ft_printf.c \
+	ft_putnbr.c \
+	ft_putothers.c
+
 OBJ = $(SRC:.c=.o)
 CC = cc
 CFLAGS = -Wall -Werror -Wextra
 #-I libft
-NAME = libftprintf.a
 
 #MAKEFLAGS += -silent
 
