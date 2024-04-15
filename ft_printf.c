@@ -6,7 +6,7 @@
 /*   By: ndavenne <ndavenne@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/07 15:43:10 by ndavenne          #+#    #+#             */
-/*   Updated: 2024/04/13 12:44:57 by ndavenne         ###   ########.fr       */
+/*   Updated: 2024/04/15 15:59:45 by ndavenne         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,10 +43,7 @@ size_t	ft_printf(const char *format, ...)
 	while (*format != '\0')
 	{
 		if (*format == '%')
-		{
-			format++;
-			nb_printed += _printarg(*(format), args);
-		}
+			nb_printed += _printarg(*(++format), args);
 		else
 			nb_printed += ft_putchar_fd(*format, 1);
 		format++;
